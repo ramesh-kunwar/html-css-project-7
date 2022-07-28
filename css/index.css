@@ -1,0 +1,296 @@
+/* #fd5e36 
+heading font
+ font-family: 'Fredoka One';;
+
+*/
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+***************************************************
+    NAV 
+***************************************************
+
+*/
+nav {
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+    justify-content: space-between;
+    align-items: center
+}
+
+
+
+nav .nav-items {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+nav .nav-items h5 {
+    margin: 1rem;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+nav .nav-items h5.active-item {
+    color: #fd5e36;
+    font-family: 'Fredoka One';
+}
+
+
+
+/* 
+==================
+    INTRO SECTION
+===================
+*/
+
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.intro-section .right-section {
+    width: 50%;
+}
+
+.intro-section .right-section .headphone-div img.headphone-image {
+    width: 100%;
+    height: 100%;
+}
+
+.intro-section .left-section {
+    width: 50%;
+}
+
+.intro-section button {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    background-color: #fd5e36;
+    color: white;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.intro-section .left-section {
+    margin-top: 4rem;
+}
+
+.intro-section .left-section h3 {
+    font-size: 2rem;
+}
+
+.intro-section h3 img {
+    width: 80px;
+}
+
+.intro-section h1 {
+    font-family: 'Fredoka One';
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.sub-headlines h5 {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 3rem;
+}
+
+.intro-section h5 img {
+
+    width: 20px;
+}
+
+.sub-headlines img {
+    background-color: #fd5e36;
+    border-radius: 100%;
+    margin-right: 1rem;
+    padding: .4rem;
+}
+
+.left-section .text {
+    margin: 4rem 0;
+    color: gray;
+
+}
+
+.left-section button {
+    margin-right: 1rem;
+}
+
+
+/* 
+================================================================
+right section
+===============================================================
+*/
+
+.intro-section .right-section {
+    position: relative;
+    text-align: center;
+}
+
+
+.right-section .headphone-div .discount-tag {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: -15%;
+}
+
+
+.right-section .headphone-div .discount-tag img {
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.right-section .headphone-div .discount-tag .discount-content {
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    color: white;
+    z-index: 5;
+}
+
+
+.dots {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    margin: 1rem;
+    border-radius: 100%;
+}
+
+.dot.yellow-dot {
+    background-color: yellow;
+}
+
+.dot.tomato-dot {
+    background-color: #fd5e36;
+}
+
+.dot.black-dot {
+    background-color: black;
+
+}
+
+
+
+
+
+
+/* 
+media quereis
+*/
+
+@media (max-width:1200px) {
+    .intro-section {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    .right-section .headphone-div .discount-tag {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 45%;
+        left: -70px;
+    }
+
+
+    
+
+    .right-section .headphone-div .discount-tag .discount-content {
+        position: absolute;
+        top: 20px;
+        left: 70px;
+        font-size: .6rem;
+        color: white;
+        z-index: 5;
+    }
+
+    .right-section .discount-content h1 {
+        font-size: 2rem;
+    }
+
+
+
+    .intro-section .right-section {
+        width: 90%;
+    }
+
+    .intro-section .left-section {
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .intro-section .left-section .text {
+        width: 90%;
+    }
+
+    .intro-section .right-section .headphone-div img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (min-width:1500px) {
+
+    .intro-section .left-section h1 {
+        font-size: 5rem;
+    }
+
+    .intro-section .left-section .text {
+        font-size: 1.1rem;
+    }
+
+    .intro-section .right-section {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .intro-section button {
+        font-size: 1.3rem;
+        border-radius: 2rem;
+    }
+
+    .right-section .headphone-div .discount-tag {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 60%;
+        left: -60px;
+    }
+
+
+}
