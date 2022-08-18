@@ -263,6 +263,17 @@ media quereis
     }
 }
 
+@media (max-width:800px) {
+body{
+    overflow-x: hidden;
+}
+    nav .nav-items {
+        display: none;
+        
+    }
+    
+    
+}
 
 @media (min-width:1500px) {
 
